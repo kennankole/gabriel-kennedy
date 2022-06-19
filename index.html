@@ -2,39 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+      #submit{
+        background-color: red;
+        font-weight: bold;
+        color: white;
+      }
+      #pricing{
+        display: flex;
+        justify-content: space-between;
+      }
+      @media only screen and (max-width: 600px) {
+        #submit {
+          background-color: rgb(100,20,30);
+        }
+}
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header id="header">
-      <img src="/trumpet.jpg" alt="" id="header-img">
+      <img src="https://cdn.shopify.com/s/files/1/1768/9095/products/LRM_EXPORT_41303201295291_20190518_234221968_1024x1024.png?v=1640916350" alt="" id="header-img">
     <nav id="nav-bar">
       <a href="#features" class="nav-link">Features</a>
-      <a href="#video" class="nav-link">How it works</a>
+      <a href="#works" class="nav-link">How it works</a>
       <a href="#pricing" class="nav-link">Pricing</a>
     </nav>
     </header>
-    <div id="features">
+    <div id="features" class="part">
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/vsINANZ6Riw" title="Baba Yetu (By Christopher Tin) Lord's Prayer in Swahili - Alex Boyé, BYU Men's Chorus/ Philharmonic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
-    <form action="#" method="post" id="form">
-      <input type="email" id="email" placeholder="enter your emial" name="email">
-      <input type="submit" id="submit">
-    </form>
-    <div id="pricing">
-      <div class="price"></div>
-      <div class="price"></div>
-      <div class="price"></div>
+    <div id="works" class="part">
+      <iframe  src="https://www.youtube.com/embed/vsINANZ6Riw" title="Baba Yetu (By Christopher Tin) Lord's Prayer in Swahili - Alex Boyé, BYU Men's Chorus/ Philharmonic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+        <input type="email" id="email" placeholder="enter your email" name="email">
+        <input type="submit" id="submit" value="GET STARTED!!!">
+      </form>
+
     </div>
 
-    
+    <div id="pricing" class="part">
+      <div class="price">
+        <h2>Monthly Price</h2>
+        <h3>200$</h3>
+      </div>
+      <div class="price">
+        <h2>Annually Price</h2>
+        <h3>2000$</h3>
+      </div>
 
-    
+    </div>
+
+
+
+
     <!--
 
     Hello Camper!
